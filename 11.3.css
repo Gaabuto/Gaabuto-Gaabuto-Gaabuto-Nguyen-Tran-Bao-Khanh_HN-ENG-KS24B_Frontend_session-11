@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #2e333b;
+    width: 100%;
+    height: 5vh;
+}
+.col1{
+    background-color: #a60162;
+    width: 100%;
+    height: 35vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    gap: 1vh;
+}
+.col2{
+    display: flex;
+    gap: 2vh;
+    margin: 2vh 0;
+}
+.tab1, .tab2, .tab3, .tab4{
+    width: 25%;
+    height: 20vh;
+    background-color: #db317f;
+}
+.col3{
+    display: flex;
+    gap: 2vh;
+}
+.tab5, .tab6{
+    background-color: #de5d9e;
+    width: 50%;
+    height: 25vh;
+}
+.col4{
+    background-color: #de5d9e;
+    width: 100%;
+    height: 30vh;
+    margin: 2vh 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .col2{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .tab1, .tab2, .tab3, .tab4{
+        width: 49.4%;
+        height: 20vh;
+        margin: 1vh 0;
+    }
+    .tab5, .tab6{
+        width: 100%;
+        height: 25vh;
+        margin: 1vh 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col2, .col3{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab1, .tab2, .tab3, .tab4{
+        width: 100%;
+        height: 20vh;
+        background-color: #db317f;
+        margin: 1vh 0;
+}
+.tab5, .tab6{
+    background-color: #de5d9e;
+    width: 100%;
+    height: 25vh;
+}
+}
